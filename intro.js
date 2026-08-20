@@ -178,13 +178,15 @@
 // displayNumbers(arr);
 
 
-//passing an object to a function
-function displayStudent(student){
-    console.log(student.name);
-    console.log(student.age);
-}
-let student={
-    name:"OM ",
-    age:20
-};
-displayStudent(student);
+// //passing an object to a function
+// function displayStudent(student){
+//     console.log(student.name);
+//     console.log(student.age);
+// }
+// let student={
+//     name:"OM ",
+//     age:20
+// };
+// displayStudent(student);
+
+
