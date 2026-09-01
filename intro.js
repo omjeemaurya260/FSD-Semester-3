@@ -190,3 +190,80 @@
 // displayStudent(student);
 
 
+// function name(first_name,last_name) {
+//     name.slice(first_name,last_name)
+// }
+// undefined
+// console.log("good morning",name)
+// VM330:1 good morning ƒ name(first_name,last_name) {
+//     name.slice(first_name,last_name)
+// }
+// undefined
+// clear
+// <g id=​"clear">​…​</g>​
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning ${r}')
+// }
+// undefined
+// console.log(greeting_msg)
+// VM534:1 ƒ greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning ${r}')
+// }
+// undefined
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning , ${r}')
+// }
+// undefined
+// console.log(r)
+// VM583:1 Uncaught ReferenceError: r is not defined
+//     at <anonymous>:1:13
+// (anonymous) @ VM583:1
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning . ${r}')
+// }
+// undefined
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning' + ${r})
+// }
+// greeting_msg('om','maurya')
+// VM671:3 Uncaught SyntaxError: missing ) after argument list
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning' + r)
+// }
+// greeting_msg('om','maurya')
+// VM684:3 good morningommaurya
+// undefined
+// function greeting_msg(first_name,last_name) {
+//     let r=first_name+last_name
+//     console.log('good morning' + r)
+// }
+// greeting_msg(' ','om','maurya')
+// VM693:3 good morning om
+// undefined
+// alert('welcome')
+// undefined
+// confirm('r you want to exit from here')
+// false
+// confirm('r you want to exit from here')
+// true
+
+
+
+// use prompt to input the value
+//         change input prompt into integer use 'b=parseInt(prompt('enter the value'))'
+
+
+// let b=parseFloat(prompt('enter the value'))   \\for float value
+
+
+
+// const arr=[1,2,3,4,5,6];
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
