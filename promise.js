@@ -7,12 +7,12 @@
 // });
 
 
-function getData(dataId) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("data", dataId);
-            resolve("sucessfully resolved");
-        }, 8000);
-    });
-}
-let r= getData(10);
+// function getData(dataId) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("data", dataId);
+//             resolve("sucessfully resolved");
+//         }, 8000);
+//     });
+// }
+// let r= getData(10);
