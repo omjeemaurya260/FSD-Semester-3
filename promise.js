@@ -60,3 +60,22 @@
 
 
 //async function 
+
+async function hello() {
+    console.log("Hello!!");
+}
+
+function Api(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Data fetched");
+            resolve(200);
+        }, 3000);
+});
+}
+//////awati Api() -reeor because it work only with async function
+async function getweatherData() {
+    await Api();
+    await Api();
+}
+getweatherData();
