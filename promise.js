@@ -59,23 +59,35 @@
 
 
 
-//async function 
+// //async function 
 
-async function hello() {
-    console.log("Hello!!");
-}
+// async function hello() {
+//     console.log("Hello!!");
+// }
 
-function Api(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("Data fetched");
-            resolve(200);
-        }, 3000);
-});
-}
-//////awati Api() -reeor because it work only with async function
-async function getweatherData() {
-    await Api();
-    await Api();
-}
-getweatherData();
+// function Api(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Data fetched");
+//             resolve(200);
+//         }, 3000);
+// });
+// }
+// //////awati Api() -reeor because it work only with async function
+// async function getweatherData() {
+//     await Api();
+//     await Api();
+// }
+// getweatherData();
+
+
+//CRUD operation using async await
+const f=required("fs");
+console.log("data1");
+console.log("data2");
+// f.writeFileSync("data.txt","Hello world");
+f.writeFileSync("data.txt","Hello world 2");
+//f.appendFilesync("data.txt","Hello world 3");
+//f.unlinkSync("data.txt");
+console.log("data3");
+console.log("data4");
