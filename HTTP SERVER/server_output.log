@@ -1,0 +1,610 @@
+Server is running on port 3000
+--- New GET / Request ---
+Server status checked at: 11:24:42 am
+-------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: {
+  query: '\n' +
+    '    query IntrospectionQuery {\n' +
+    '      __schema {\n' +
+    '        \n' +
+    '        queryType { name }\n' +
+    '        mutationType { name }\n' +
+    '        subscriptionType { name }\n' +
+    '        types {\n' +
+    '          ...FullType\n' +
+    '        }\n' +
+    '        directives {\n' +
+    '          name\n' +
+    '          description\n' +
+    '          \n' +
+    '          locations\n' +
+    '          args {\n' +
+    '            ...InputValue\n' +
+    '          }\n' +
+    '        }\n' +
+    '      }\n' +
+    '    }\n' +
+    '\n' +
+    '    fragment FullType on __Type {\n' +
+    '      kind\n' +
+    '      name\n' +
+    '      description\n' +
+    '      \n' +
+    '      fields(includeDeprecated: true) {\n' +
+    '        name\n' +
+    '        description\n' +
+    '        args {\n' +
+    '          ...InputValue\n' +
+    '        }\n' +
+    '        type {\n' +
+    '          ...TypeRef\n' +
+    '        }\n' +
+    '        isDeprecated\n' +
+    '        deprecationReason\n' +
+    '      }\n' +
+    '      inputFields {\n' +
+    '        ...InputValue\n' +
+    '      }\n' +
+    '      interfaces {\n' +
+    '        ...TypeRef\n' +
+    '      }\n' +
+    '      enumValues(includeDeprecated: true) {\n' +
+    '        name\n' +
+    '        description\n' +
+    '        isDeprecated\n' +
+    '        deprecationReason\n' +
+    '      }\n' +
+    '      possibleTypes {\n' +
+    '        ...TypeRef\n' +
+    '      }\n' +
+    '    }\n' +
+    '\n' +
+    '    fragment InputValue on __InputValue {\n' +
+    '      name\n' +
+    '      description\n' +
+    '      type { ...TypeRef }\n' +
+    '      defaultValue\n' +
+    '      \n' +
+    '      \n' +
+    '    }\n' +
+    '\n' +
+    '    fragment TypeRef on __Type {\n' +
+    '      kind\n' +
+    '      name\n' +
+    '      ofType {\n' +
+    '        kind\n' +
+    '        name\n' +
+    '        ofType {\n' +
+    '          kind\n' +
+    '          name\n' +
+    '          ofType {\n' +
+    '            kind\n' +
+    '            name\n' +
+    '            ofType {\n' +
+    '              kind\n' +
+    '              name\n' +
+    '              ofType {\n' +
+    '                kind\n' +
+    '                name\n' +
+    '                ofType {\n' +
+    '                  kind\n' +
+    '                  name\n' +
+    '                  ofType {\n' +
+    '                    kind\n' +
+    '                    name\n' +
+    '                  }\n' +
+    '                }\n' +
+    '              }\n' +
+    '            }\n' +
+    '          }\n' +
+    '        }\n' +
+    '      }\n' +
+    '    }\n' +
+    '  '
+}
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  {
+    query: '\n' +
+      '    query IntrospectionQuery {\n' +
+      '      __schema {\n' +
+      '        \n' +
+      '        queryType { name }\n' +
+      '        mutationType { name }\n' +
+      '        subscriptionType { name }\n' +
+      '        types {\n' +
+      '          ...FullType\n' +
+      '        }\n' +
+      '        directives {\n' +
+      '          name\n' +
+      '          description\n' +
+      '          \n' +
+      '          locations\n' +
+      '          args {\n' +
+      '            ...InputValue\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment FullType on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      description\n' +
+      '      \n' +
+      '      fields(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        args {\n' +
+      '          ...InputValue\n' +
+      '        }\n' +
+      '        type {\n' +
+      '          ...TypeRef\n' +
+      '        }\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      inputFields {\n' +
+      '        ...InputValue\n' +
+      '      }\n' +
+      '      interfaces {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '      enumValues(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      possibleTypes {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment InputValue on __InputValue {\n' +
+      '      name\n' +
+      '      description\n' +
+      '      type { ...TypeRef }\n' +
+      '      defaultValue\n' +
+      '      \n' +
+      '      \n' +
+      '    }\n' +
+      '\n' +
+      '    fragment TypeRef on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      ofType {\n' +
+      '        kind\n' +
+      '        name\n' +
+      '        ofType {\n' +
+      '          kind\n' +
+      '          name\n' +
+      '          ofType {\n' +
+      '            kind\n' +
+      '            name\n' +
+      '            ofType {\n' +
+      '              kind\n' +
+      '              name\n' +
+      '              ofType {\n' +
+      '                kind\n' +
+      '                name\n' +
+      '                ofType {\n' +
+      '                  kind\n' +
+      '                  name\n' +
+      '                  ofType {\n' +
+      '                    kind\n' +
+      '                    name\n' +
+      '                  }\n' +
+      '                }\n' +
+      '              }\n' +
+      '            }\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '  '
+  }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  {
+    query: '\n' +
+      '    query IntrospectionQuery {\n' +
+      '      __schema {\n' +
+      '        \n' +
+      '        queryType { name }\n' +
+      '        mutationType { name }\n' +
+      '        subscriptionType { name }\n' +
+      '        types {\n' +
+      '          ...FullType\n' +
+      '        }\n' +
+      '        directives {\n' +
+      '          name\n' +
+      '          description\n' +
+      '          \n' +
+      '          locations\n' +
+      '          args {\n' +
+      '            ...InputValue\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment FullType on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      description\n' +
+      '      \n' +
+      '      fields(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        args {\n' +
+      '          ...InputValue\n' +
+      '        }\n' +
+      '        type {\n' +
+      '          ...TypeRef\n' +
+      '        }\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      inputFields {\n' +
+      '        ...InputValue\n' +
+      '      }\n' +
+      '      interfaces {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '      enumValues(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      possibleTypes {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment InputValue on __InputValue {\n' +
+      '      name\n' +
+      '      description\n' +
+      '      type { ...TypeRef }\n' +
+      '      defaultValue\n' +
+      '      \n' +
+      '      \n' +
+      '    }\n' +
+      '\n' +
+      '    fragment TypeRef on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      ofType {\n' +
+      '        kind\n' +
+      '        name\n' +
+      '        ofType {\n' +
+      '          kind\n' +
+      '          name\n' +
+      '          ofType {\n' +
+      '            kind\n' +
+      '            name\n' +
+      '            ofType {\n' +
+      '              kind\n' +
+      '              name\n' +
+      '              ofType {\n' +
+      '                kind\n' +
+      '                name\n' +
+      '                ofType {\n' +
+      '                  kind\n' +
+      '                  name\n' +
+      '                  ofType {\n' +
+      '                    kind\n' +
+      '                    name\n' +
+      '                  }\n' +
+      '                }\n' +
+      '              }\n' +
+      '            }\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '  '
+  },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  {
+    query: '\n' +
+      '    query IntrospectionQuery {\n' +
+      '      __schema {\n' +
+      '        \n' +
+      '        queryType { name }\n' +
+      '        mutationType { name }\n' +
+      '        subscriptionType { name }\n' +
+      '        types {\n' +
+      '          ...FullType\n' +
+      '        }\n' +
+      '        directives {\n' +
+      '          name\n' +
+      '          description\n' +
+      '          \n' +
+      '          locations\n' +
+      '          args {\n' +
+      '            ...InputValue\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment FullType on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      description\n' +
+      '      \n' +
+      '      fields(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        args {\n' +
+      '          ...InputValue\n' +
+      '        }\n' +
+      '        type {\n' +
+      '          ...TypeRef\n' +
+      '        }\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      inputFields {\n' +
+      '        ...InputValue\n' +
+      '      }\n' +
+      '      interfaces {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '      enumValues(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      possibleTypes {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment InputValue on __InputValue {\n' +
+      '      name\n' +
+      '      description\n' +
+      '      type { ...TypeRef }\n' +
+      '      defaultValue\n' +
+      '      \n' +
+      '      \n' +
+      '    }\n' +
+      '\n' +
+      '    fragment TypeRef on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      ofType {\n' +
+      '        kind\n' +
+      '        name\n' +
+      '        ofType {\n' +
+      '          kind\n' +
+      '          name\n' +
+      '          ofType {\n' +
+      '            kind\n' +
+      '            name\n' +
+      '            ofType {\n' +
+      '              kind\n' +
+      '              name\n' +
+      '              ofType {\n' +
+      '                kind\n' +
+      '                name\n' +
+      '                ofType {\n' +
+      '                  kind\n' +
+      '                  name\n' +
+      '                  ofType {\n' +
+      '                    kind\n' +
+      '                    name\n' +
+      '                  }\n' +
+      '                }\n' +
+      '              }\n' +
+      '            }\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '  '
+  },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New POST /students Request ---
+Request Body: { name: 'om', branch: 'ai-ml' }
+Updated Students List: [
+  { id: 1, name: 'om', branch: 'cse' },
+  { id: 2, name: 'ram', branch: 'it' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  {
+    query: '\n' +
+      '    query IntrospectionQuery {\n' +
+      '      __schema {\n' +
+      '        \n' +
+      '        queryType { name }\n' +
+      '        mutationType { name }\n' +
+      '        subscriptionType { name }\n' +
+      '        types {\n' +
+      '          ...FullType\n' +
+      '        }\n' +
+      '        directives {\n' +
+      '          name\n' +
+      '          description\n' +
+      '          \n' +
+      '          locations\n' +
+      '          args {\n' +
+      '            ...InputValue\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment FullType on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      description\n' +
+      '      \n' +
+      '      fields(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        args {\n' +
+      '          ...InputValue\n' +
+      '        }\n' +
+      '        type {\n' +
+      '          ...TypeRef\n' +
+      '        }\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      inputFields {\n' +
+      '        ...InputValue\n' +
+      '      }\n' +
+      '      interfaces {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '      enumValues(includeDeprecated: true) {\n' +
+      '        name\n' +
+      '        description\n' +
+      '        isDeprecated\n' +
+      '        deprecationReason\n' +
+      '      }\n' +
+      '      possibleTypes {\n' +
+      '        ...TypeRef\n' +
+      '      }\n' +
+      '    }\n' +
+      '\n' +
+      '    fragment InputValue on __InputValue {\n' +
+      '      name\n' +
+      '      description\n' +
+      '      type { ...TypeRef }\n' +
+      '      defaultValue\n' +
+      '      \n' +
+      '      \n' +
+      '    }\n' +
+      '\n' +
+      '    fragment TypeRef on __Type {\n' +
+      '      kind\n' +
+      '      name\n' +
+      '      ofType {\n' +
+      '        kind\n' +
+      '        name\n' +
+      '        ofType {\n' +
+      '          kind\n' +
+      '          name\n' +
+      '          ofType {\n' +
+      '            kind\n' +
+      '            name\n' +
+      '            ofType {\n' +
+      '              kind\n' +
+      '              name\n' +
+      '              ofType {\n' +
+      '                kind\n' +
+      '                name\n' +
+      '                ofType {\n' +
+      '                  kind\n' +
+      '                  name\n' +
+      '                  ofType {\n' +
+      '                    kind\n' +
+      '                    name\n' +
+      '                  }\n' +
+      '                }\n' +
+      '              }\n' +
+      '            }\n' +
+      '          }\n' +
+      '        }\n' +
+      '      }\n' +
+      '    }\n' +
+      '  '
+  },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' },
+  { name: 'om', branch: 'ai-ml' }
+]
+----------------------------------
+--- New GET / Request ---
+Server status checked at: 3:56:48 pm
+-------------------------
