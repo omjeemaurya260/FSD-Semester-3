@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Library Management System</h1>
+            <p>Manage your collection seamlessly through the web interface</p>
+        </header>
+
+        <!-- Form Section for Add / Update -->
+        <section class="card form-section">
+            <h2 id="form-title">Add New Book</h2>
+            <form id="book-form">
+                <input type="hidden" id="book-id">
+                
+                <div class="form-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" placeholder="e.g. The Great Gatsby" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" placeholder="e.g. F. Scott Fitzgerald" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Publication Year</label>
+                    <input type="number" id="year" placeholder="e.g. 1925" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="submit-btn" class="btn btn-primary">Add Book</button>
+                    <button type="button" id="cancel-btn" class="btn btn-secondary hidden">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Display Section -->
+        <section class="card list-section">
+            <h2>Book Collection</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="books-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
